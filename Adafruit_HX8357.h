@@ -132,7 +132,7 @@ class Adafruit_HX8357 : public Adafruit_SPITFT {
     Adafruit_HX8357(SPIClass *spi, int8_t _CS, int8_t _DC, int8_t _RST = -1,
       uint8_t type = HX8357D);
 #endif // end !ESP8266
-    ~Adafruit_HX8357(void);
+    virtual ~Adafruit_HX8357();
 
     void    begin(uint32_t freq = 0),
             setRotation(uint8_t r),
